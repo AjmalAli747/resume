@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap link  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- awesome icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- sweet alert  -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- web page convert to pdf  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <!-- media Query  -->
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <!-- css  -->
+    <link rel="stylesheet" href="css/resume.css">
+    <title>Resume</title>
+</head>
+<body>
+
+    <main>
+        <section id="form_section">
+            <div class="container">
+                <div class="row">
+                        <div class="form_section">
+                            <form action="" class="form_container">
+                                <h1>Sign Up</h1>
+                                <div class="input_filed_icon">
+                                    <i class="fas fa-user" id="userIcon"></i>
+                                    <input type="text" name="" id="yourName" placeholder="Enter Your Name">
+                                </div>
+                                <div class="input_filed_icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <input type="number" name="" id="youNumber" placeholder="Enter Your Number">
+                                </div>
+                                <div class="input_filed_icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" name="" id="email" placeholder="Enter Your Email">
+                                </div>
+                                <div class="input_filed_icon">
+                                    <i class="fas fa-unlock-alt"></i>
+                                    <input type="password" name="" id="password" placeholder="Enter Your Password">
+                                </div>
+                                <div class="input_filed_icon">
+                                    <i class="fas fa-globe-europe"></i>
+                                    <select name="" id="country">
+                                        <option value="country">Country</option>
+                                    </select>
+                                </div>
+
+                                <!-- google pop Sign up  -->
+                                <div class="google-pop-sign-up">
+                                    <div class="pop_google google_color">
+                                        <i class="fab fa-google"></i>
+                                        <p>Google</p>
+                                    </div>
+                                    <div class="pop_google github_color">
+                                        <i class="fab fa-github"></i>
+                                        <p>GitHub</p>
+                                    </div>
+                                </div>
+
+                                <!-- checkbox disripation  -->
+                                <div class="checkbox_des">
+                                    <input type="checkbox" value="Check" name="" id="checkbox">
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, molestiae.
+                                        <b><a href="#">Sign In</a></b>
+                                    </p>
+                                </div>
+                                <!-- submit button  -->
+                                <div class="submit_buton">
+                                    <input type="submit" value="Submit" id="submitBtn">
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- resume section  -->
+        <section id="resume_file">
+            <div class="container form_submit_section">
+               <form action="" class="form-group" id="form_Submit_resume">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="">Name <sup>*</sup></label>
+                        <input type="text" class="form-control" id="resume_name" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="">Email <sup>*</sup></label>
+                        <input type="email" class="form-control" id="resume_email" placeholder="Enter Your Email" required>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="">Phone <sup>*</sup></label>
+                        <input type="number" class="form-control" id="resume_Number" placeholder="Enter Your Number" required>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="">Password <sup>*</sup></label>
+                        <input type="password" class="form-control" id="resume_password" placeholder="Enter Your Password" required>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="">Languages <sup>*</sup></label>
+                        <input type="text" class="form-control" id="resume_Languages" placeholder="Enter Your Languages" required>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="">Projects <sup>*</sup></label>
+                        <input type="text" class="form-control" id="resume_Projects" placeholder="Enter Your Projects" required>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <label for="">Bio Data <sup>*</sup></label>
+                        <textarea name="" class="form-control" id="profile" cols="30" rows="10" placeholder="Enter Your Profile" required></textarea>
+                    </div>
+
+                    <div class="submitButton">
+                        <input type="submit" value="Save" id="saveButton">
+                        <input type="submit" value="Submit" id="sunmiyButton">
+                        <input type="submit" value="Preview" id="previewButton">
+                    </div>
+                </div>
+               </form>
+            </div>
+        </section>
+
+        <!-- pop section with form  -->
+        <section id="close_POP_Container">
+            <div class="times_box" id="times_close">
+                <button class="times"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="container output_form">
+                <div class="row" id="donwload_container">
+                    <div class="col-lg-6 col-md-6">
+                        <h1>Name</h1>
+                        <p class="name_text">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <h1>Email</h1>
+                        <p class="email_text">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <h1>Phone</h1>
+                        <p class="phone_text">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <h1>Password</h1>
+                        <p class="password_text">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <h1>Languages</h1>
+                        <p class="languages_text">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <h1>Projects</h1>
+                        <p>
+                            <a href="#" class="project_link">Lorem ipsum dolor sit amet.</a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <h1>Bio Data</h1>
+                        <p class="bioData_text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, quo soluta. Cumque, laborum facilis exercitationem maiores adipisci quidem qui voluptatibus officiis excepturi soluta cupiditate sequi minus veritatis nihil, quasi ex corrupti consectetur, dolore aut perferendis repellendus consequuntur? Voluptatem, eligendi velit, mollitia dolorem cupiditate molestias ratione obcaecati corporis nesciunt ut minus!
+                            elit. Modi, quo soluta. Cumque, laborum facilis exercitationem maiores adipisci quidem qui voluptatibus officiis excepturi soluta cupiditate sequi minus veritatis nihil, quasi ex corrupti consectetur, dolore aut perferendis repellendus consequuntur? Voluptatem, eligendi velit, mollitia dolorem cupiditate molestias ratione obcaecati corporis nesciunt ut minus!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="button_btn" id="donwload">
+                    <button>Donwload</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    
+  
+<!-- js  -->
+<script src="js/resume.js"></script>
+</body>
+</html>
+
+
+

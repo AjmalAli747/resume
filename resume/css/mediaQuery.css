@@ -1,0 +1,9 @@
+@media screen and (max-width: 600px){
+    .form_section .form_container{
+        width: 330px !important;
+    }
+
+    .form_container .checkbox_des{
+        padding: 10px 0px;
+    }
+}

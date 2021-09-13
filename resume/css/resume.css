@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: 'Poppins', sans-serif;
+   background-color: #1f4037;
+}
+
+#form_section{
+    /* display: none; */
+}
+
+#resume_file{
+    display: none;
+}
+
+.form_section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_section .form_container{
+    width: 400px;
+    margin: 0 auto;
+    background-color: rgb(255,255,255);
+    padding: 20px 0;
+    border-radius: 5px;
+    box-shadow: -2px 1px 11px 0px rgba(0,0,0,0.7);
+-webkit-box-shadow: -2px 1px 11px 0px rgba(0,0,0,0.7);
+-moz-box-shadow: -2px 1px 11px 0px rgba(0,0,0,0.7);
+}
+
+.form_container h1{
+    font-size: 1.50rem;
+    text-align: center;
+    margin: 10px 0 20px 0;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.form_container .input_filed_icon{
+    width: 100%;
+    padding: 5px 20px;
+    position: relative;
+}
+
+.input_filed_icon
+input, select{
+    width: 100%;
+    padding: 10px 20px 8px 31px;
+    outline: none;
+    border: 1px solid rgb(119, 119, 119);
+}
+
+.input_filed_icon
+input:focus, select:focus{
+    border: 1px solid rgb(2, 173, 39);
+}
+
+.input_filed_icon input.borderLine, select.borderLine{
+    border: 1px solid red;
+}
+
+.input_filed_icon input::placeholder{
+    /* padding-left: 10px; */
+    font-size: 12px;
+}
+
+.input_filed_icon i{
+    position: absolute;
+    top: 18.50px;
+    left: 28px;
+    font-size: 18px;
+    color: #0000006e;
+}
+
+/* alert section with pop  */
+.input_filed_icon i.nameThis{
+    animation: iconTop 0.5s ease-in-out;
+    color: red;
+}
+
+@keyframes iconTop{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-2px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.form_container .google-pop-sign-up{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+}
+
+.google-pop-sign-up .pop_google{
+    width: 100%;
+    height: 45px;
+    color: white;
+    display: flex;
+    margin: 0 20px;
+    box-shadow: 5px 8px 8px -6px rgba(0,0,0,0.5);
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+.pop_google i{
+    font-size: 1.50rem;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.pop_google p{
+    font-size: 1.10rem;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.google_color{
+    background-color: #4885ed !important;
+}
+
+.google_color:hover{
+    background-color: #115ee4 !important;
+}
+
+.github_color{
+    background-color: rgb(26, 25, 25);
+}
+
+.github_color:hover{
+    background-color: rgb(8, 8, 8);
+}
+
+.form_container .checkbox_des{
+    width: 100%;
+    display: flex;
+    padding: 10px 20px;
+}
+
+.checkbox_des input{
+    width: 21px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.checkbox_des p{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 13px;
+}
+
+.checkbox_des p a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.checkbox_des p a:hover{
+   text-decoration: underline;
+}
+
+.form_container .submit_buton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_buton input{
+    margin: 25px 0 10px 0;
+    width: 200px;
+    padding: 7px;
+    background-color: #1f4037;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 5px 8px 8px -6px rgba(0,0,0,0.5);
+}
+
+.submit_buton input:hover{
+    background-color: #11221d;
+}
+
+
+/* ************************ form_submit_section **************************************** */
+.form_submit_section{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.form_submit_section form label{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.form_submit_section form label sup{
+    color: red;
+}
+
+.form_submit_section form input{
+    width: 100%;
+    margin: 10px 0;
+    outline: none;
+    padding: 10px 10px;
+}
+
+.form_submit_section form input:focus{
+    box-shadow: none;
+    border: 1px solid rgb(6, 236, 6);
+}
+
+.form_submit_section .submitButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+textarea{
+    resize: none;
+}
+
+.submitButton input[type="submit"]{
+    width: 200px;
+    text-align: center;
+    font-size: 1.10rem;
+    font-weight: 500;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.submitButton input[type="submit"]:hover{
+   background-color: orangered;
+   color: white;
+}
+
+.submitButton input[type="submit"]:focus{
+    border: none;
+}
+
+/* ******************** output_form **************************************** */
+#close_POP_Container{
+    display: none;
+    z-index: 55;
+}
+
+.times_box{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+.times_box button{
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.times_box button:hover{
+    background-color: orangered;
+    color: white;
+}
+
+.output_form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+    width: 450px;
+    height: 550px;
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+.output_form h1{
+    margin-top: 15px;
+    font-size: 1.20rem;
+    font-weight: bold;
+}
+
+.output_form p{
+    font-size: 13px;
+}
+
+.output_form p a{
+    text-decoration: none;
+    color: white;
+}
+
+.output_form .bioData_text{
+    width: 100%;
+    height: 170px;
+    overflow-y: scroll;
+    line-height: 24px;
+}
+
+.output_form .bioData_text::-webkit-scrollbar{
+   display: none;
+}
+
+.output_form .button_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.output_form .button_btn button{
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 8px 25px;
+    border-radius: 5px;
+    box-shadow: 5px 8px 8px -6px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.output_form .button_btn button:hover{
+    background-color: orangered;
+    color: white;
+}
+
+/* ********************* media query *********************************** */
+@media screen and (max-width: 439px){
+    .submitButton input[type="submit"]{
+        width: 100px;
+        font-size: 14px;
+        margin: 10px 7px;
+    }
+
+    /* form pop  */
+    .times_box{
+        justify-content: center;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .output_form{
+        width: 95%;
+        height: 670px;
+        padding: 20px 20px;
+    }
+
+    .output_form h1{
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+    
+    .output_form p{
+        font-size: 12px;
+    }
+
+    .output_form .bioData_text{
+        height: 150px;
+    }
+
+    .output_form .button_btn button{
+        padding: 8px 25px;
+        margin-bottom: 50px;
+    }
+
+}
